@@ -1,12 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <title>Code Brush</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/myStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+  
+  </head>
+  <body>
+    <div>
+      <header id="playground_header">
+        <h1> Code Brush</h1>
+      </header>
+
+      <div>
+        <div class="boxes">
+          <div id="coding_area">
+            <textarea id="html" placeholder="HTML" class="live" onkeyup="count_up(this);" maxlength="200"></textarea> 
+            <textarea id="css" placeholder="CSS" class="live"></textarea> 
+          </div>
+          <span id="textcount1">0</span> characters
+          <div id="code_output">
+            <iframe id="code"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./assets/app.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script> -->
+
+  </body>
 </html>
